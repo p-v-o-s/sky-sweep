@@ -176,13 +176,6 @@
 <text x="-2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="VIN">
-<wire x1="-1.016" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="0" x2="0" y2="1.778" width="0.254" layer="94"/>
-<wire x1="0" y1="1.778" x2="1.016" y2="0" width="0.254" layer="94"/>
-<text x="-2.032" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VIN" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="3V3">
 <wire x1="-1.016" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="0" x2="0" y2="1.651" width="0.254" layer="94"/>
@@ -195,18 +188,6 @@
 <deviceset name="+5V">
 <gates>
 <gate name="G$1" symbol="+5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VIN">
-<gates>
-<gate name="G$1" symbol="VIN" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -12334,7 +12315,6 @@ Source: http://www.osram.convergy.de/</description>
 <parts>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="U$6" library="MyPOW" deviceset="+5V" device=""/>
-<part name="U$7" library="MyPOW" deviceset="VIN" device=""/>
 <part name="U$8" library="MyPOW" deviceset="3V3" device=""/>
 <part name="J1" library="MyCON2" deviceset="HEAD15-NOSS" device=""/>
 <part name="J2" library="MyCON2" deviceset="HEAD15-NOSS-1" device=""/>
@@ -12362,7 +12342,6 @@ Source: http://www.osram.convergy.de/</description>
 <part name="RLED3" library="rcl" deviceset="R-EU_" device="0204/7" value="1.5K"/>
 <part name="U$11" library="MyPOW" deviceset="+5V" device=""/>
 <part name="RLED4" library="rcl" deviceset="R-EU_" device="0204/7" value="1.5K"/>
-<part name="U$12" library="MyPOW" deviceset="VIN" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
@@ -12370,6 +12349,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY16" library="SparkFun" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12386,7 +12366,6 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
 <instance part="U$6" gate="G$1" x="256.54" y="177.8"/>
-<instance part="U$7" gate="G$1" x="248.92" y="177.8"/>
 <instance part="U$8" gate="G$1" x="264.16" y="177.8"/>
 <instance part="J1" gate="G$1" x="198.12" y="152.4" rot="MR0"/>
 <instance part="J2" gate="G$1" x="223.52" y="152.4"/>
@@ -12435,7 +12414,6 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="161.5186" y="118.11" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="164.338" y="118.11" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="U$12" gate="G$1" x="234.95" y="109.22"/>
 <instance part="SUPPLY8" gate="GND" x="254" y="157.48"/>
 <instance part="SUPPLY9" gate="GND" x="271.78" y="127"/>
 <instance part="SUPPLY11" gate="GND" x="303.53" y="172.72" rot="R90"/>
@@ -12443,6 +12421,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="SUPPLY13" gate="GND" x="302.26" y="149.86" rot="R90"/>
 <instance part="SUPPLY14" gate="GND" x="158.75" y="99.06"/>
 <instance part="SUPPLY15" gate="GND" x="167.64" y="160.02"/>
+<instance part="SUPPLY16" gate="1" x="248.92" y="175.26"/>
 </instances>
 <busses>
 </busses>
@@ -12628,24 +12607,6 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="158.75" y1="130.81" x2="158.75" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VIN" class="0">
-<segment>
-<wire x1="248.92" y1="170.18" x2="233.68" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="170.18" x2="248.92" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="VIN"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="226.06" y1="106.68" x2="234.95" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="234.95" y1="106.68" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="96.52" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="I"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<pinref part="U$12" gate="G$1" pin="VIN"/>
-<junction x="234.95" y="106.68"/>
-</segment>
-</net>
 <net name="3V3" class="0">
 <segment>
 <wire x1="233.68" y1="137.16" x2="264.16" y2="137.16" width="0.1524" layer="91"/>
@@ -12757,6 +12718,12 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="SUPPLY7" gate="1" pin="VCC"/>
 <wire x1="160.02" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="248.92" y1="170.18" x2="233.68" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="170.18" x2="248.92" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="SUPPLY16" gate="1" pin="VCC"/>
+</segment>
 </net>
 <net name="D8" class="0">
 <segment>
@@ -12802,6 +12769,15 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="RLED4" gate="G$1" pin="1"/>
 <wire x1="158.75" y1="116.84" x2="158.75" y2="111.76" width="0.1524" layer="91"/>
 <junction x="158.75" y="116.84"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<wire x1="226.06" y1="106.68" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="96.52" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="I"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
