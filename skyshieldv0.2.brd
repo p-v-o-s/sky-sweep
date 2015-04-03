@@ -18,7 +18,7 @@
 <layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -662,15 +662,29 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="MyCON2" package="HEAD15-NOSS" value="HEAD15-NOSS" x="16.4846" y="39.37" rot="R270"/>
-<element name="J2" library="MyCON2" package="HEAD15-NOSS-1" value="HEAD15-NOSS-1" x="1.27" y="39.3446" rot="R270"/>
-<element name="R1" library="rcl" package="0204/7" value="10K" x="4.2418" y="15.748" rot="R270"/>
-<element name="IC2" library="JeeLabs" package="TO92" value="MCP1702-5" x="6.6294" y="36.0426"/>
-<element name="C5" library="resistor" package="E1,8-4" value="10µ" x="12.4206" y="36.9824" rot="R90"/>
-<element name="C4" library="resistor" package="C025-024X044" value="0.1µ" x="12.6746" y="40.9448"/>
-<element name="JP1" library="SparkFun" package="1X02_LOCK_LONGPADS" value="BATT" x="8.2042" y="40.8686" rot="R180"/>
+<element name="J1" library="MyCON2" package="HEAD15-NOSS" value="HEAD15-NOSS" x="16.4846" y="39.37" smashed="yes" rot="R270">
+<attribute name="VALUE" x="14.3764" y="40.6146" size="0.6096" layer="27" rot="R270"/>
+</element>
+<element name="J2" library="MyCON2" package="HEAD15-NOSS-1" value="HEAD15-NOSS-1" x="1.27" y="39.3446" smashed="yes" rot="R270">
+<attribute name="NAME" x="2.8448" y="40.6146" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="-0.8382" y="40.64" size="0.6096" layer="27" rot="R270"/>
+</element>
+<element name="R1" library="rcl" package="0204/7" value="10K" x="4.2418" y="15.748" smashed="yes" rot="R270">
+<attribute name="VALUE" x="3.7592" y="17.3736" size="0.9906" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="IC2" library="JeeLabs" package="TO92" value="MCP1702-5" x="6.6294" y="36.0426" smashed="yes">
+<attribute name="VALUE" x="9.5504" y="34.7726" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C5" library="resistor" package="E1,8-4" value="10µ" x="12.4206" y="36.9824" smashed="yes" rot="R90">
+<attribute name="VALUE" x="14.1986" y="39.1414" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="C4" library="resistor" package="C025-024X044" value="0.1µ" x="12.6746" y="40.9448" smashed="yes">
+<attribute name="VALUE" x="10.8966" y="38.2778" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="JP1" library="SparkFun" package="1X02_LOCK_LONGPADS" value="BATT" x="8.2042" y="40.8686" smashed="yes" rot="R180">
+<attribute name="VALUE" x="9.4742" y="44.1706" size="1.27" layer="27" font="vector" rot="R180"/>
+</element>
 <element name="LED" library="adafruit" package="LED3MM" value="POWERLED" x="7.1374" y="31.9278" smashed="yes" rot="R180">
-<attribute name="NAME" x="5.2324" y="31.5468" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="5.2324" y="33.5788" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="SV4" library="con-lstb" package="MA09-1" value="" x="12.3698" y="22.8092" smashed="yes" rot="R90">
@@ -678,21 +692,44 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="" x="12.3698" y="22.8092" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="12.3698" y="22.8092" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="12.3698" y="22.8092" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="10.7188" y="11.3792" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="15.2908" y="22.8092" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R2" library="rcl" package="0204/7" value="10K" x="6.5532" y="15.748" rot="R270"/>
-<element name="LED1" library="adafruit" package="LED3MM" value="POWERLED" x="7.112" y="27.432" rot="R180"/>
-<element name="R3" library="rcl" package="0204/7" value="10K" x="8.9408" y="15.748" rot="R90"/>
-<element name="LED2" library="adafruit" package="LED3MM" value="POWERLED" x="7.112" y="22.8346" rot="R180"/>
-<element name="RS2" library="rcl" package="0204/7" value="10K" x="11.6078" y="6.1214" rot="R270"/>
-<element name="RS1" library="rcl" package="0204/7" value="100" x="13.8176" y="6.1214" rot="R90"/>
-<element name="CHDK1A" library="pinhead" package="1X01" value="" x="4.2672" y="5.3848"/>
-<element name="CHDK1B" library="pinhead" package="1X01" value="" x="6.8072" y="5.3848"/>
-<element name="CHDK2A" library="pinhead" package="1X01" value="" x="4.2926" y="9.0678"/>
-<element name="CHDK2B" library="pinhead" package="1X01" value="" x="6.8326" y="9.0678"/>
-<element name="SW1B" library="pinhead" package="1X01" value="" x="5.0038" y="1.8796"/>
-<element name="SW1A" library="pinhead" package="1X01" value="" x="7.5692" y="1.8796"/>
+<element name="R2" library="rcl" package="0204/7" value="10K" x="6.5532" y="15.748" smashed="yes" rot="R270">
+<attribute name="VALUE" x="6.0706" y="17.3736" size="0.9906" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="LED1" library="adafruit" package="LED3MM" value="POWERLED" x="7.112" y="27.432" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.207" y="29.083" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="R3" library="rcl" package="0204/7" value="10K" x="8.9408" y="15.748" smashed="yes" rot="R90">
+<attribute name="VALUE" x="9.4234" y="14.1224" size="0.9906" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="LED2" library="adafruit" package="LED3MM" value="POWERLED" x="7.112" y="22.8346" smashed="yes" rot="R180">
+<attribute name="VALUE" x="5.207" y="24.4856" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="RS2" library="rcl" package="0204/7" value="10K" x="11.6078" y="6.1214" smashed="yes" rot="R270">
+<attribute name="VALUE" x="11.1252" y="7.747" size="0.9906" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="RS1" library="rcl" package="0204/7" value="100" x="13.8176" y="6.1214" smashed="yes" rot="R90">
+<attribute name="VALUE" x="14.3002" y="4.4958" size="0.9906" layer="27" ratio="10" rot="R90"/>
+</element>
+<element name="CHDK1A" library="pinhead" package="1X01" value="" x="4.2672" y="5.3848" smashed="yes">
+<attribute name="VALUE" x="2.9972" y="2.2098" size="1.27" layer="27"/>
+</element>
+<element name="CHDK1B" library="pinhead" package="1X01" value="" x="6.8072" y="5.3848" smashed="yes">
+<attribute name="VALUE" x="5.5372" y="2.2098" size="1.27" layer="27"/>
+</element>
+<element name="CHDK2A" library="pinhead" package="1X01" value="" x="4.2926" y="9.0678" smashed="yes">
+<attribute name="VALUE" x="3.0226" y="5.8928" size="1.27" layer="27"/>
+</element>
+<element name="CHDK2B" library="pinhead" package="1X01" value="" x="6.8326" y="9.0678" smashed="yes">
+<attribute name="VALUE" x="5.5626" y="5.8928" size="1.27" layer="27"/>
+</element>
+<element name="SW1B" library="pinhead" package="1X01" value="" x="5.0038" y="1.8796" smashed="yes">
+<attribute name="VALUE" x="3.7338" y="-1.2954" size="1.27" layer="27"/>
+</element>
+<element name="SW1A" library="pinhead" package="1X01" value="" x="7.5692" y="1.8796" smashed="yes">
+<attribute name="VALUE" x="6.2992" y="-1.2954" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="D5">
