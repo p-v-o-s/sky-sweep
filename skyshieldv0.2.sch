@@ -12368,7 +12368,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="U$8" library="MyPOW" deviceset="3V3" device=""/>
 <part name="J1" library="MyCON2" deviceset="HEAD15-NOSS" device=""/>
 <part name="J2" library="MyCON2" deviceset="HEAD15-NOSS-1" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="0204/7" value="1.5K"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="0204/7" value="10K"/>
 <part name="IC2" library="JeeLabs" deviceset="MCP1702" device="Z" value="MCP1702-5"/>
 <part name="C5" library="resistor" deviceset="CPOL-EU" device="E1.8-4" value="10µ"/>
 <part name="SUPPLY3" library="SparkFun" deviceset="VCC" device=""/>
@@ -12377,9 +12377,9 @@ Source: http://www.osram.convergy.de/</description>
 <part name="JP1" library="SparkFun" deviceset="M02" device="LOCK_LONGPADS" value="BATT"/>
 <part name="LED" library="adafruit" deviceset="LED" device="3MM" value="POWERLED"/>
 <part name="SV4" library="con-lstb" deviceset="MA09-1" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="0204/7" value="1.5K"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="0204/7" value="10K"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="3MM" value="POWERLED"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="0204/7" value="1.5K"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="0204/7" value="10K"/>
 <part name="LED2" library="adafruit" deviceset="LED" device="3MM" value="POWERLED"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
