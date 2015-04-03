@@ -15,7 +15,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="13" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -115,8 +115,8 @@
 <wire x1="17.78" y1="2.4638" x2="17.78" y2="40.6908" width="0" layer="20"/>
 <wire x1="15.3162" y1="43.18" x2="2.4892" y2="43.18" width="0" layer="20"/>
 <wire x1="0" y1="40.7162" x2="0" y2="2.4892" width="0" layer="20"/>
-<text x="2.4638" y="26.924" size="1.016" layer="21" ratio="15" rot="R270">KAPtery</text>
-<text x="3.4544" y="27.813" size="1.016" layer="21" ratio="15" rot="R90">sky-sweep0.2</text>
+<text x="3.556" y="22.86" size="1.016" layer="21" ratio="15" rot="R90">KAPtery</text>
+<text x="3.4798" y="30.2006" size="1.016" layer="21" ratio="15" rot="R90">sky-sweep</text>
 <text x="4.1402" y="24.8666" size="1.016" layer="21" ratio="15" rot="R270">A</text>
 <text x="3.9878" y="29.6672" size="1.016" layer="21" ratio="15" rot="R270">B</text>
 <text x="3.9878" y="33.8582" size="1.016" layer="21" ratio="15" rot="R270">C</text>
@@ -135,7 +135,7 @@
 <text x="6.477" y="6.6548" size="1.016" layer="21" ratio="15">+</text>
 <text x="8.7122" y="6.858" size="1.016" layer="21" ratio="15" rot="R270">CM1</text>
 <text x="8.7122" y="10.414" size="1.016" layer="21" ratio="15" rot="R270">CM2</text>
-<text x="9.271" y="1.397" size="1.016" layer="21" ratio="15">S</text>
+<text x="2.4892" y="1.3716" size="1.016" layer="21" ratio="15">S</text>
 <text x="4.8514" y="15.0114" size="1.016" layer="21" ratio="15" rot="R90">R1</text>
 <text x="7.0358" y="14.986" size="1.016" layer="21" ratio="15" rot="R90">R2</text>
 <text x="9.4488" y="15.0114" size="1.016" layer="21" ratio="15" rot="R90">R3</text>
@@ -145,11 +145,13 @@
 <wire x1="15.3162" y1="43.18" x2="17.78" y2="40.6908" width="0" layer="20" curve="-94.264616"/>
 <wire x1="2.4638" y1="0" x2="0" y2="2.4892" width="0" layer="20" curve="-94.264616"/>
 <wire x1="17.78" y1="2.4638" x2="15.2908" y2="0" width="0" layer="20" curve="-94.264616"/>
-<text x="15.5194" y="40.7162" size="1.016" layer="21" ratio="15">TX</text>
-<text x="3.4798" y="39.0906" size="1.016" layer="21" ratio="15" rot="R90">VIN</text>
-<text x="10.5156" y="43.0784" size="1.016" layer="21" ratio="15" rot="R180">+</text>
-<text x="3.4036" y="42.1386" size="1.016" layer="21" ratio="15">-</text>
-<text x="16.1544" y="2.921" size="1.016" layer="21" ratio="15" rot="R225">D12</text>
+<text x="9.8044" y="39.1922" size="1.016" layer="21" ratio="15" rot="R180">+</text>
+<text x="3.6322" y="38.5318" size="1.016" layer="21" ratio="15">-</text>
+<text x="15.7988" y="1.3462" size="1.016" layer="21" ratio="15" rot="R180">ver 0.2</text>
+<text x="14.3002" y="11.7602" size="1.016" layer="22" ratio="15" rot="MR90">publiclab.org/wiki/sky-sweep</text>
+<text x="7.9248" y="35.3822" size="0.889" layer="21" ratio="15" rot="R180">LDO</text>
+<text x="13.1318" y="37.973" size="1.016" layer="21" ratio="15" rot="R270">C2</text>
+<text x="15.2146" y="42.545" size="1.016" layer="21" ratio="15" rot="R270">C1</text>
 </plain>
 <libraries>
 <library name="MyCON2">
@@ -666,19 +668,18 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="14.3764" y="40.6146" size="0.6096" layer="27" rot="R270"/>
 </element>
 <element name="J2" library="MyCON2" package="HEAD15-NOSS-1" value="HEAD15-NOSS-1" x="1.27" y="39.3446" smashed="yes" rot="R270">
-<attribute name="NAME" x="2.8448" y="40.6146" size="0.6096" layer="25" rot="R270"/>
 <attribute name="VALUE" x="-0.8382" y="40.64" size="0.6096" layer="27" rot="R270"/>
 </element>
 <element name="R1" library="rcl" package="0204/7" value="10K" x="4.2418" y="15.748" smashed="yes" rot="R270">
 <attribute name="VALUE" x="3.7592" y="17.3736" size="0.9906" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="IC2" library="JeeLabs" package="TO92" value="MCP1702-5" x="6.6294" y="36.0426" smashed="yes">
+<element name="LDO" library="JeeLabs" package="TO92" value="MCP1702-5" x="6.6294" y="36.0426" smashed="yes">
 <attribute name="VALUE" x="9.5504" y="34.7726" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C5" library="resistor" package="E1,8-4" value="10µ" x="12.4206" y="36.9824" smashed="yes" rot="R90">
+<element name="C2" library="resistor" package="E1,8-4" value="10µ" x="12.4206" y="36.9824" smashed="yes" rot="R90">
 <attribute name="VALUE" x="14.1986" y="39.1414" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C4" library="resistor" package="C025-024X044" value="0.1µ" x="12.6746" y="40.9448" smashed="yes">
+<element name="C1" library="resistor" package="C025-024X044" value="0.1µ" x="12.6746" y="40.9448" smashed="yes">
 <attribute name="VALUE" x="10.8966" y="38.2778" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="JP1" library="SparkFun" package="1X02_LOCK_LONGPADS" value="BATT" x="8.2042" y="40.8686" smashed="yes" rot="R180">
@@ -857,9 +858,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="J1" pad="2"/>
 </signal>
 <signal name="GND" class="1">
-<contactref element="IC2" pad="1"/>
-<contactref element="C5" pad="-"/>
-<contactref element="C4" pad="2"/>
+<contactref element="LDO" pad="1"/>
+<contactref element="C2" pad="-"/>
+<contactref element="C1" pad="2"/>
 <contactref element="JP1" pad="2"/>
 <contactref element="SV4" pad="9"/>
 <contactref element="SV4" pad="6"/>
@@ -939,9 +940,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="4.2672" y="17.526" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="VCC" class="1">
-<contactref element="C5" pad="+"/>
-<contactref element="IC2" pad="3"/>
-<contactref element="C4" pad="1"/>
+<contactref element="C2" pad="+"/>
+<contactref element="LDO" pad="3"/>
+<contactref element="C1" pad="1"/>
 <contactref element="SV4" pad="8"/>
 <contactref element="SV4" pad="5"/>
 <contactref element="SV4" pad="2"/>
@@ -1040,7 +1041,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.43" y1="2.286" x2="11.6078" y2="2.3114" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$6">
-<contactref element="IC2" pad="2"/>
+<contactref element="LDO" pad="2"/>
 <contactref element="JP1" pad="1"/>
 <wire x1="6.7056" y1="39.3192" x2="6.7056" y2="37.9476" width="0.4064" layer="1"/>
 <wire x1="8.2296" y1="40.8432" x2="6.7056" y2="39.3192" width="0.4064" layer="1"/>

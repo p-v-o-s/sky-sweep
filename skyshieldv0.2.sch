@@ -12369,11 +12369,11 @@ Source: http://www.osram.convergy.de/</description>
 <part name="J1" library="MyCON2" deviceset="HEAD15-NOSS" device=""/>
 <part name="J2" library="MyCON2" deviceset="HEAD15-NOSS-1" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0204/7" value="10K"/>
-<part name="IC2" library="JeeLabs" deviceset="MCP1702" device="Z" value="MCP1702-5"/>
-<part name="C5" library="resistor" deviceset="CPOL-EU" device="E1.8-4" value="10µ"/>
+<part name="LDO" library="JeeLabs" deviceset="MCP1702" device="Z" value="MCP1702-5"/>
+<part name="C2" library="resistor" deviceset="CPOL-EU" device="E1.8-4" value="10µ"/>
 <part name="SUPPLY3" library="SparkFun" deviceset="VCC" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
-<part name="C4" library="resistor" deviceset="C-EU" device="025-024X044" value="0.1µ"/>
+<part name="C1" library="resistor" deviceset="C-EU" device="025-024X044" value="0.1µ"/>
 <part name="JP1" library="SparkFun" deviceset="M02" device="LOCK_LONGPADS" value="BATT"/>
 <part name="LED" library="adafruit" deviceset="LED" device="3MM" value="POWERLED"/>
 <part name="SV4" library="con-lstb" deviceset="MA09-1" device=""/>
@@ -12428,11 +12428,11 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="285.75" y="152.6286" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="285.75" y="150.368" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="IC2" gate="G$1" x="218.44" y="104.14" rot="MR0"/>
-<instance part="C5" gate="G$1" x="195.58" y="101.6" rot="MR0"/>
+<instance part="LDO" gate="G$1" x="218.44" y="104.14" rot="MR0"/>
+<instance part="C2" gate="G$1" x="195.58" y="101.6" rot="MR0"/>
 <instance part="SUPPLY3" gate="1" x="187.96" y="109.22"/>
 <instance part="SUPPLY10" gate="GND" x="187.96" y="88.9"/>
-<instance part="C4" gate="G$1" x="187.96" y="101.6" rot="MR0"/>
+<instance part="C1" gate="G$1" x="187.96" y="101.6" rot="MR0"/>
 <instance part="JP1" gate="G$1" x="248.92" y="96.52" rot="R180"/>
 <instance part="LED" gate="G$1" x="290.83" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="295.402" y="153.416" size="1.778" layer="95" rot="R180"/>
@@ -12677,9 +12677,9 @@ Source: http://www.osram.convergy.de/</description>
 <junction x="195.58" y="93.98"/>
 <junction x="187.96" y="93.98"/>
 <pinref part="SUPPLY10" gate="GND" pin="GND"/>
-<pinref part="C5" gate="G$1" pin="-"/>
-<pinref part="IC2" gate="G$1" pin="GND"/>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="-"/>
+<pinref part="LDO" gate="G$1" pin="GND"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -12746,9 +12746,9 @@ Source: http://www.osram.convergy.de/</description>
 <junction x="195.58" y="106.68"/>
 <junction x="187.96" y="106.68"/>
 <pinref part="SUPPLY3" gate="1" pin="VCC"/>
-<pinref part="C5" gate="G$1" pin="+"/>
-<pinref part="IC2" gate="G$1" pin="O"/>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="+"/>
+<pinref part="LDO" gate="G$1" pin="O"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="SV4" gate="1" pin="8"/>
@@ -12815,7 +12815,7 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="226.06" y1="106.68" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="96.52" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="I"/>
+<pinref part="LDO" gate="G$1" pin="I"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 </segment>
 </net>
