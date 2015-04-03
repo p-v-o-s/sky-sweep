@@ -12472,7 +12472,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="SUPPLY11" gate="GND" x="303.53" y="172.72" rot="R90"/>
 <instance part="SUPPLY12" gate="GND" x="302.26" y="160.02" rot="R90"/>
 <instance part="SUPPLY13" gate="GND" x="302.26" y="149.86" rot="R90"/>
-<instance part="SUPPLY14" gate="GND" x="149.86" y="92.71"/>
+<instance part="SUPPLY14" gate="GND" x="158.75" y="92.71"/>
 <instance part="SUPPLY15" gate="GND" x="167.64" y="160.02"/>
 <instance part="SUPPLY16" gate="1" x="248.92" y="175.26"/>
 <instance part="SUPPLY17" gate="GND" x="274.32" y="111.76"/>
@@ -12480,8 +12480,8 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="CHDK1B" gate="G$1" x="276.86" y="119.38"/>
 <instance part="CHDK2A" gate="G$1" x="297.18" y="134.62"/>
 <instance part="CHDK2B" gate="G$1" x="297.18" y="129.54"/>
-<instance part="SW1B" gate="G$1" x="147.32" y="106.68" rot="R180"/>
-<instance part="SW1A" gate="G$1" x="147.32" y="111.76" rot="R180"/>
+<instance part="SW1B" gate="G$1" x="156.21" y="105.41" rot="R180"/>
+<instance part="SW1A" gate="G$1" x="156.21" y="110.49" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -12733,7 +12733,7 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="SW1B" gate="G$1" pin="1"/>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<wire x1="149.86" y1="95.25" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="95.25" x2="158.75" y2="105.41" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -12805,8 +12805,9 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="RS2" gate="G$1" pin="2"/>
 <wire x1="158.75" y1="120.65" x2="158.75" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="RS1" gate="G$1" pin="1"/>
-<wire x1="158.75" y1="116.84" x2="158.75" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="116.84" x2="158.75" y2="110.49" width="0.1524" layer="91"/>
 <junction x="158.75" y="116.84"/>
+<pinref part="SW1A" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -12842,12 +12843,6 @@ Source: http://www.osram.convergy.de/</description>
 <label x="236.22" y="142.24" size="1.778" layer="95"/>
 <wire x1="274.32" y1="142.24" x2="274.32" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="CHDK1A" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="SW1A" gate="G$1" pin="1"/>
-<wire x1="158.75" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
