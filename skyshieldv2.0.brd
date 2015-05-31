@@ -152,7 +152,7 @@
 <text x="3.3274" y="42.4688" size="1.016" layer="21" ratio="15" rot="R180">+</text>
 <text x="8.128" y="41.6814" size="1.016" layer="21" ratio="15">-</text>
 <text x="4.7752" y="27.94" size="1.016" layer="21" ratio="15" rot="R270">KAPtery</text>
-<text x="14.3002" y="15.113" size="1.016" layer="22" ratio="15" rot="MR90">publiclab.org/wiki/sky-sweep</text>
+<text x="2.794" y="15.8242" size="1.016" layer="22" ratio="15" rot="MR90">publiclab.org/wiki/sky-sweep</text>
 <text x="12.0396" y="35.8394" size="0.889" layer="21" ratio="15" rot="R180">LDO</text>
 <text x="8.5344" y="35.3822" size="1.016" layer="21" ratio="15" rot="R180">C2</text>
 <text x="16.0528" y="41.5798" size="1.016" layer="21" ratio="15" rot="R180">C1</text>
@@ -161,8 +161,8 @@
 <text x="3.175" y="37.1602" size="0.6096" layer="21" font="vector" ratio="15">VIN</text>
 <text x="5.4864" y="28.3972" size="0.6096" layer="21" ratio="15" rot="R90">.com</text>
 <text x="2.6924" y="36.2966" size="1.016" layer="21" ratio="15" rot="R270">v2.0</text>
-<text x="5.715" y="4.7752" size="1.4224" layer="22" ratio="15" rot="MR180">KAPtery</text>
-<text x="5.7404" y="3.3274" size="1.016" layer="22" ratio="15" rot="MR0">.com</text>
+<text x="6.1468" y="7.7978" size="1.4224" layer="22" ratio="15" rot="MR180">KAPtery</text>
+<text x="6.2992" y="6.1214" size="1.016" layer="22" ratio="15" rot="MR0">.com</text>
 <wire x1="4.4196" y1="19.9644" x2="5.2324" y2="19.5834" width="0.3048" layer="21"/>
 <wire x1="4.3942" y1="19.9898" x2="2.6924" y2="19.9644" width="0.3048" layer="21"/>
 <wire x1="4.3942" y1="19.9898" x2="4.0386" y2="18.923" width="0.3048" layer="21"/>
