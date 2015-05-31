@@ -142,8 +142,8 @@
 <text x="14.1986" y="13.9192" size="1.016" layer="21" ratio="15" rot="R270">D9</text>
 <wire x1="10.2362" y1="26.9494" x2="14.0208" y2="26.9494" width="0.4064" layer="21"/>
 <wire x1="10.3124" y1="19.304" x2="14.097" y2="19.304" width="0.4064" layer="21"/>
-<text x="3.302" y="14.6304" size="0.889" layer="21" ratio="15" rot="R270">CM1</text>
-<text x="4.0894" y="15.367" size="0.889" layer="21" ratio="15" rot="R90">CM2</text>
+<text x="3.302" y="14.6304" size="0.889" layer="21" ratio="15" rot="R270">A0</text>
+<text x="4.0894" y="15.367" size="0.889" layer="21" ratio="15" rot="R90">A1</text>
 <text x="2.6924" y="0.5334" size="1.016" layer="21" ratio="15" rot="R90">SW</text>
 <wire x1="0" y1="40.7162" x2="2.4892" y2="43.18" width="0" layer="20" curve="-94.264616"/>
 <wire x1="15.3162" y1="43.18" x2="17.78" y2="40.6908" width="0" layer="20" curve="-94.264616"/>
@@ -163,10 +163,6 @@
 <text x="2.6924" y="36.2966" size="1.016" layer="21" ratio="15" rot="R270">v2.0</text>
 <text x="6.1468" y="7.7978" size="1.4224" layer="22" ratio="15" rot="MR180">KAPtery</text>
 <text x="6.2992" y="6.1214" size="1.016" layer="22" ratio="15" rot="MR0">.com</text>
-<wire x1="4.4196" y1="19.9644" x2="5.2324" y2="19.5834" width="0.3048" layer="21"/>
-<wire x1="4.3942" y1="19.9898" x2="2.6924" y2="19.9644" width="0.3048" layer="21"/>
-<wire x1="4.3942" y1="19.9898" x2="4.0386" y2="18.923" width="0.3048" layer="21"/>
-<wire x1="4.4196" y1="19.9644" x2="4.6482" y2="18.9738" width="0.3048" layer="21"/>
 </plain>
 <libraries>
 <library name="MyCON2">
