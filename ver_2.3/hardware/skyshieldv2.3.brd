@@ -816,9 +816,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP1" pad="6"/>
 <contactref element="JP1" pad="5"/>
 <contactref element="JP1" pad="4"/>
-<contactref element="JP1" pad="2"/>
-<contactref element="JP1" pad="1"/>
-<contactref element="JP1" pad="3"/>
 <wire x1="4.953" y1="33.147" x2="6.2484" y2="33.147" width="0.381" layer="16"/>
 <wire x1="1.2954" y1="36.8046" x2="4.953" y2="33.147" width="0.381" layer="16"/>
 <wire x1="6.2484" y1="33.147" x2="6.2738" y2="33.0962" width="0.381" layer="16"/>
@@ -841,16 +838,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.4874" y1="5.2578" x2="13.4874" y2="7.62" width="0.381" layer="1"/>
 <wire x1="13.4874" y1="7.62" x2="13.4366" y2="7.62" width="0.381" layer="1"/>
 <wire x1="13.4874" y1="5.2578" x2="13.4366" y2="5.08" width="0.381" layer="1"/>
-<wire x1="8.2296" y1="15.8496" x2="8.2296" y2="13.5636" width="0.381" layer="16"/>
-<wire x1="8.4328" y1="16.0528" x2="8.2296" y2="15.8496" width="0.381" layer="16"/>
-<wire x1="8.2296" y1="13.5636" x2="8.1788" y2="13.5128" width="0.381" layer="16"/>
-<wire x1="8.2296" y1="16.383" x2="8.2296" y2="18.5928" width="0.381" layer="16"/>
-<wire x1="8.382" y1="16.2306" x2="8.2296" y2="16.383" width="0.381" layer="16"/>
-<wire x1="8.2296" y1="18.5928" x2="8.1788" y2="18.5928" width="0.381" layer="16"/>
-<wire x1="8.382" y1="16.2306" x2="8.4328" y2="16.0528" width="0.381" layer="16"/>
 <wire x1="8.382" y1="18.669" x2="8.382" y2="21.1074" width="0.381" layer="16"/>
 <wire x1="8.382" y1="21.1074" x2="8.4328" y2="21.1328" width="0.381" layer="16"/>
-<wire x1="8.382" y1="18.669" x2="8.1788" y2="18.5928" width="0.381" layer="16"/>
 <wire x1="8.2296" y1="21.1836" x2="8.2296" y2="23.622" width="0.381" layer="16"/>
 <wire x1="8.2296" y1="23.622" x2="8.1788" y2="23.6728" width="0.381" layer="16"/>
 <wire x1="8.2296" y1="21.1836" x2="8.4328" y2="21.1328" width="0.381" layer="16"/>
@@ -861,11 +850,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.4112" y1="8.1534" x2="13.4112" y2="7.62" width="0.381" layer="16"/>
 <wire x1="8.2296" y1="13.335" x2="13.4112" y2="8.1534" width="0.381" layer="16"/>
 <wire x1="13.4112" y1="7.62" x2="13.4366" y2="7.62" width="0.381" layer="16"/>
-<wire x1="8.2296" y1="13.335" x2="8.1788" y2="13.5128" width="0.381" layer="16"/>
 <wire x1="6.3246" y1="28.3464" x2="6.3246" y2="32.9184" width="0.381" layer="16"/>
 <wire x1="8.3058" y1="26.3652" x2="6.3246" y2="28.3464" width="0.381" layer="16"/>
 <wire x1="6.3246" y1="32.9184" x2="6.2738" y2="33.0962" width="0.381" layer="16"/>
 <wire x1="8.3058" y1="26.3652" x2="8.4328" y2="26.2128" width="0.381" layer="16"/>
+<contactref element="JP1" pad="1"/>
+<contactref element="JP1" pad="2"/>
+<wire x1="8.4328" y1="16.0528" x2="8.382" y2="18.669" width="0" layer="19" extent="16-16"/>
+<wire x1="8.1788" y1="13.5128" x2="8.4328" y2="16.0528" width="0" layer="19" extent="1-1"/>
+<wire x1="8.2296" y1="13.335" x2="8.1788" y2="13.5128" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VCC" class="1">
 <contactref element="C2" pad="+"/>
@@ -875,12 +868,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP2" pad="6"/>
 <contactref element="JP2" pad="4"/>
 <contactref element="JP2" pad="5"/>
-<contactref element="JP2" pad="3"/>
 <wire x1="12.954" y1="38.7096" x2="12.954" y2="40.5638" width="0.381" layer="1"/>
 <wire x1="11.3792" y1="37.1348" x2="12.954" y2="38.7096" width="0.381" layer="1"/>
 <wire x1="10.7442" y1="20.955" x2="10.7442" y2="18.669" width="0.381" layer="1"/>
 <wire x1="10.9474" y1="21.1582" x2="10.7442" y2="20.955" width="0.381" layer="1"/>
-<wire x1="10.7442" y1="18.669" x2="10.6934" y2="18.6182" width="0.381" layer="1"/>
 <wire x1="8.0772" y1="29.1084" x2="8.0772" y2="33.0708" width="0.381" layer="1"/>
 <wire x1="10.9474" y1="26.2382" x2="8.0772" y2="29.1084" width="0.381" layer="1"/>
 <wire x1="8.0772" y1="33.0708" x2="8.0518" y2="33.0962" width="0.381" layer="1"/>

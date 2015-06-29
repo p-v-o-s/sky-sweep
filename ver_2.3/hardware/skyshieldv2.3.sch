@@ -12841,6 +12841,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M06" device="LOCK"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="SparkFun" deviceset="VCC" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12880,6 +12881,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="JP3" gate="G$1" x="104.14" y="119.38"/>
 <instance part="SUPPLY14" gate="GND" x="50.8" y="124.46"/>
 <instance part="SUPPLY19" gate="1" x="78.74" y="127"/>
+<instance part="SUPPLY1" gate="GND" x="43.18" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -13112,19 +13114,17 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="JP1" gate="G$1" pin="5"/>
 <wire x1="43.18" y1="124.46" x2="43.18" y2="127" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="124.46" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="121.92" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="119.38" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="116.84" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="3"/>
-<junction x="43.18" y="119.38"/>
 <wire x1="43.18" y1="127" x2="50.8" y2="127" width="0.1524" layer="91"/>
 <junction x="43.18" y="127"/>
-<junction x="43.18" y="116.84"/>
-<junction x="43.18" y="121.92"/>
 <junction x="43.18" y="124.46"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="116.84" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<junction x="43.18" y="114.3"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -13151,13 +13151,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="JP2" gate="G$1" pin="6"/>
 <pinref part="SUPPLY19" gate="1" pin="VCC"/>
 <wire x1="78.74" y1="127" x2="73.66" y2="127" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="3"/>
 <pinref part="JP2" gate="G$1" pin="4"/>
-<wire x1="73.66" y1="119.38" x2="73.66" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="5"/>
 <wire x1="73.66" y1="121.92" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="124.46" x2="73.66" y2="127" width="0.1524" layer="91"/>
-<junction x="73.66" y="121.92"/>
 <junction x="73.66" y="124.46"/>
 <junction x="73.66" y="127"/>
 </segment>
